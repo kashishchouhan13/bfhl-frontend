@@ -11,7 +11,7 @@ const App = () => {
     e.preventDefault();
     try {
       const payload = JSON.parse(input);
-      const res = await axios.post("https://your-backend-url/bfhl", payload);
+      const res = await axios.post("https://backend-bfhl-s2b7.onrender.com/bfhl", payload);
       setResponse(res.data);
       setError(null);
     } catch (err) {
